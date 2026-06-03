@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "borg — Pirate Borg → Roll20",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Mirror dice rolls from your jolly-rogenerator.app Pirate Borg character sheet into Roll20.",
   "permissions": ["storage", "tabs"],
   "host_permissions": [

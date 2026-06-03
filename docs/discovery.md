@@ -60,6 +60,12 @@ attaches it as `damage` only when the attack outcome is HIT/CRITICAL. `templates
 rolled 2d4 → 5).
 
 ## Known gaps / follow-ups
+
+- **First roll of a modal doesn't render (jolly bug).** The FIRST roll after opening a Combat
+  Action modal does not render the result line — you must click Roll a second time. Subsequent
+  rolls ("Roll Again") render on the first click. borg only captures once the line renders, so the
+  first roll of a freshly opened modal is not mirrored. Appears to be a jolly dice-box init quirk
+  (matches the Firefox "first roll shows nothing" symptom). Tracked as a follow-up.
 - **Crit damage:** on a CRITICAL outcome we currently send the base damage formula (no
   doubling/max). Pirate Borg crit rules could be applied in `rawToRoll` if desired.
 - **Defend** modal not separately exercised, but it presents the same DR/result shape and should

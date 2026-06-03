@@ -1,6 +1,6 @@
 {
   "name": "borg",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Mirror Pirate Borg (jolly-rogenerator.app) dice rolls into Roll20.",
   "private": true,
   "license": "MIT",
