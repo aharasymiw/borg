@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "borg — Pirate Borg → Roll20",
+  "version": "0.1.0",
+  "description": "Mirror dice rolls from your jolly-rogenerator.app Pirate Borg character sheet into Roll20.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "borg@jolly-rogenerator-roll20",
+      "strict_min_version": "115.0"
+    }
+  },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "*://*.jolly-rogenerator.app/*",
+    "*://app.roll20.net/*"
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "borg",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["source-page.js"],
+      "matches": ["*://*.jolly-rogenerator.app/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.jolly-rogenerator.app/*"],
+      "js": ["source.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    },
+    {
+      "matches": ["*://app.roll20.net/editor*"],
+      "js": ["roll20.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

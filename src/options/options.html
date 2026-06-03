@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>borg settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="borg-options">
+      <h1>borg</h1>
+      <p class="sub">Mirror Pirate Borg rolls from jolly-rogenerator into Roll20.</p>
+
+      <label class="row switch">
+        <input type="checkbox" id="enabled" />
+        <span>Enabled</span>
+      </label>
+
+      <label class="row">
+        <span>Capture mode</span>
+        <select id="mode">
+          <option value="passive">Passive — mirror the sheet's own dice</option>
+          <option value="buttons">Buttons — add roll buttons to the sheet</option>
+        </select>
+      </label>
+
+      <label class="row">
+        <span>What appears in Roll20</span>
+        <select id="resultMode">
+          <option value="mirror">Mirror — show the exact captured result</option>
+          <option value="reroll">Reroll — let Roll20 roll the dice</option>
+        </select>
+      </label>
+
+      <label class="row switch">
+        <input type="checkbox" id="whisperToGM" />
+        <span>Whisper rolls to the GM (/w gm)</span>
+      </label>
+
+      <label class="row">
+        <span>Speaking as (Roll20 character)</span>
+        <input type="text" id="speakingAs" placeholder="optional — exact character name" />
+      </label>
+
+      <label class="row">
+        <span>Default difficulty rating (DR)</span>
+        <input type="number" id="defaultDR" min="2" max="30" />
+      </label>
+
+      <label class="row switch">
+        <input type="checkbox" id="debug" />
+        <span>Debug logging (verbose console output)</span>
+      </label>
+
+      <p class="saved" id="saved" hidden>Saved.</p>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>

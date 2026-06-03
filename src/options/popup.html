@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>borg</title>
+    <link rel="stylesheet" href="options.css" />
+    <style>
+      body { min-width: 240px; }
+      .borg-options { max-width: 240px; }
+      .open-options {
+        margin-top: 8px;
+        cursor: pointer;
+        background: var(--accent);
+        color: #fff;
+        border: 0;
+        border-radius: 6px;
+        padding: 7px 10px;
+        font: inherit;
+        font-weight: 600;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="borg-options">
+      <h1>borg</h1>
+      <label class="row switch">
+        <input type="checkbox" id="enabled" />
+        <span>Enabled</span>
+      </label>
+      <label class="row">
+        <span>Capture mode</span>
+        <select id="mode">
+          <option value="passive">Passive (mirror)</option>
+          <option value="buttons">Buttons</option>
+        </select>
+      </label>
+      <button class="open-options" id="open-options">All settings…</button>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "borg",
+  "version": "0.1.0",
+  "description": "Mirror Pirate Borg (jolly-rogenerator.app) dice rolls into Roll20.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:chrome": "node build.mjs chrome",
+    "build:firefox": "node build.mjs firefox",
+    "watch": "node build.mjs --watch",
+    "package": "npm run build && node package.mjs",
+    "package:chrome": "npm run build:chrome && node package.mjs chrome",
+    "package:firefox": "npm run build:firefox && node package.mjs firefox",
+    "clean": "rm -rf build dist"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5"
+  }
+}

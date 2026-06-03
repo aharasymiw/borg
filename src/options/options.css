@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light dark;
+  --accent: #8a5a2b;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 16px;
+  min-width: 360px;
+}
+
+.borg-options {
+  max-width: 460px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+}
+
+.sub {
+  margin: 4px 0 16px;
+  opacity: 0.75;
+  font-size: 0.85rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+}
+
+.row > span {
+  font-weight: 600;
+}
+
+.row.switch {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.row.switch > span {
+  font-weight: 500;
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+  padding: 6px 8px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.saved {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
