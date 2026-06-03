@@ -55,9 +55,13 @@ Certify all three:
 
 - AMO does not require per-permission justifications, but the listing should explain
   what the extension does and link the privacy policy.
-- Source-code submission: borg is built with esbuild. If AMO review asks for source +
-  build steps, point them at the GitHub repo and: `npm install && npm run build:firefox`
-  (output in `build/firefox`). Node version: see `.nvmrc`/your local Node.
+- Source-code submission: borg is built with esbuild (bundled, **not** minified). AMO treats
+  bundled output as machine-generated, so expect to provide source + build steps. Point reviewers
+  at the GitHub repo (https://github.com/aharasymiw/borg) with:
+  `npm install && npm run build:firefox` → output in `build/firefox`.
+  Built with Node v24.15.0 / npm 11.12.1 on macOS (any recent Node 18+ works).
+- License: AMO requires a license for listed add-ons. The repo ships an MIT `LICENSE`; select
+  **MIT** in the AMO form.
 
 ---
 

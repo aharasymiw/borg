@@ -78,3 +78,7 @@ npm run package          # zips for store upload → dist/borg-<target>-<version
 Unofficial and fan-made. Not affiliated with, authorized, or endorsed by Roll20, Limithron
 (Pirate Borg), or jolly-rogenerator. "Pirate Borg" and "Roll20" are trademarks of their
 respective owners.
+
+## License
+
+[MIT](LICENSE) © Andrew Harasymiw
