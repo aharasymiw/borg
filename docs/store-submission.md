@@ -3,6 +3,23 @@
 Copy-paste answers for the Chrome Web Store and Firefox AMO submission forms.
 Privacy policy URL (host PRIVACY.md): `https://github.com/aharasymiw/borg/blob/main/PRIVACY.md`
 
+## ⏸ Resume here (paused 2026-06-03, v0.2.0)
+
+Everything below is prepared. What's left, in order:
+
+1. **Screenshots (blocker).** Capture two native shots (⌘⇧4): the jolly **Attack** modal showing
+   the green **HIT!** banner (roll twice — first roll doesn't render, known bug), and the **Roll20
+   chat** with borg cards. Drop them in `assets/screenshots/`. Then I crop/pad to exactly
+   **1280×800** and commit. (The browser tool's auto-saved shots land host-side and aren't readable
+   from the build sandbox, so we capture natively.)
+2. **Chrome Web Store** — upload `dist/borg-chrome-0.2.0.zip`, paste the copy + justifications
+   below, set the privacy-policy URL, add screenshots, submit. (User: $5 one-time fee.)
+3. **Firefox AMO** — upload `dist/borg-firefox-0.2.0.zip`, pick **MIT** license, add screenshots +
+   privacy-policy URL, submit. (User: Mozilla account.)
+
+State: committed + pushed to github.com/aharasymiw/borg (HEAD has v0.2.0). Zips built in `dist/`.
+Both browsers validated end-to-end. Re-package anytime with `npm run package`.
+
 ---
 
 ## Single purpose (Chrome requires one sentence)
